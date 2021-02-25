@@ -1,0 +1,36 @@
+.background-references {
+  background-color: var(--dark-mode);
+}
+
+.card-container {
+  text-align: center;
+}
+
+.card-container__tutor {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 150px;
+  width: 150px;
+  margin: auto;
+}
+
+/* .information-tutor {
+  
+} */
+
+.information-tutor__name {
+  font-size: 1.1rem;
+}
+
+.information-tutor__position {
+  font-size: .8rem;
+}
+
+.information-tutor__company {
+  font-size: .8rem;
+}
+
+.information-tutor__email {
+  color: var(--light-mode);
+  font-size: .9rem;
+}

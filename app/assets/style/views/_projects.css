@@ -1,0 +1,47 @@
+.background-projects {
+  background-color: var(--dark-mode);
+}
+
+.projects-container {
+  margin: auto;
+  width: var(--min-width);
+  max-width: var(--max-width);
+  padding: 1rem;
+}
+
+.projects-container__header {
+  text-align: center;
+}
+
+.projects-container__title {
+  font-size:1.3rem;
+}
+
+.project-card {
+  text-align: center;
+}
+
+.project-card__image {
+  width: 90%;
+  border-radius: var(--border-radius);
+}
+
+.project-information {
+  padding: 0 1rem;
+}
+
+.project-information__name {
+  font-size: 1.1rem;
+}
+
+.project-information__summary {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.project-information__link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+

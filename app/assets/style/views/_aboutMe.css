@@ -1,0 +1,26 @@
+.background-about-me{
+  background-color: var(--dark-mode-contrast);
+  padding: 1rem 0;
+}
+
+.about-me-container{
+  margin: auto;
+  width: var(--min-width);
+  max-width: var(--max-width);
+  /* border: 2px solid #fff; */
+}
+
+.about-me-container__header{
+  margin: var(--margin-tb) auto;
+  text-align: left;
+}
+
+.about-me-container__title{
+  font-size: 1.3rem;
+}
+
+.about-me-container__paragraph{
+  text-align: justify;
+  margin: var(--margin-tb) auto;
+  line-height: 30px;
+}
