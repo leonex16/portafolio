@@ -19,6 +19,12 @@
 
 .tecnologies-container__categories {
   margin: var(--margin-tb) auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px,320px));
+  justify-content: center;
+  justify-items: center;
+  gap: 1rem;
+  margin: 1rem auto;
 }
 
 .category-container {
@@ -42,4 +48,20 @@
 
 .category-container > svg * {
   fill: var(--light-mode) !important;
+}
+
+@media screen and (min-width: 768px){
+  .category-container:last-child{
+    grid-column-start: span 2;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .backgound-tecnologies {
+    background-color: var(--dark-mode);
+  }
+
+  .category-container:last-child{
+    grid-column-start: span 3;
+  }
 }

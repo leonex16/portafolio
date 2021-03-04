@@ -28,6 +28,12 @@
   transition: opacity .2s linear;
 }
 
-.bottom-links-container__img:hover, .bottom-links-container__img--active{
+.bottom-links-container__img:hover{
   opacity: 1;
+}
+
+@media screen and (min-width: 768px){
+  .bottom-navbar-container{
+    display: none;
+  }  
 }

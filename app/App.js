@@ -2,6 +2,8 @@ import includeHtml from "./helpers/includeHtml.js";
 import includeSvg from "./helpers/includeSvg.js";
 import desactivateBtn from "./helpers/desactivateBtn.js";
 import activateBtn from "./helpers/activateBtn.js";
+import moveReferences from "./helpers/moveReferences.js";
+import changeImageMe from "./helpers/changeImageMe.js";
 
 let $root = document.getElementById("root");
 // let views = [
@@ -14,7 +16,15 @@ let $root = document.getElementById("root");
 //   {fileName: 'footer.html', element: $root},
 //   {fileName: 'bottomNavbar.html', element: $root},
 // ];
-let pathsSvg = {
+let pathsSvgContactMe = {
+  'rrss': [
+    'gmail',
+    'linkedin',
+    'whatsapp'
+  ]
+};
+
+let pathsSvgTecnologies = {
   'backEnd': [
     'node',
     'express'
@@ -62,15 +72,21 @@ export function App(){
   includeHtml({fileName: 'bottomNavbar.html', element: $root});
 
   setTimeout(() => {
-    includeSvg(pathsSvg);
+    includeSvg(pathsSvgTecnologies);
     activateBtn();
     desactivateBtn();
+    moveReferences();
+    changeImageMe();
   }, 500);
 };
 
+
+// EL ARCHIVO UTILIZADO CONTIENE DOS SVG. NO SE PUDO INCRUSTAR TODO EN UN HTML
+// DADO QUE FETCH POR ALGUNA RAZÓN NO TRAE CIERTA CANTIDAD DE CARACTERES
+
 setTimeout(() => {
   fetch('app/assets/views/introductionSvgs.html')
-.then(res => res.ok ? res.text() : Promise.reject())
-.then(text => document.querySelector('.contact-me').insertAdjacentHTML('afterbegin', text))
-.catch(err => console.error('Error al cargar la ruta: ' + fileName + 'More Info => ' + err))
+    .then(res => res.ok ? res.text() : Promise.reject())
+    .then(text => document.querySelector('.contact-me').insertAdjacentHTML('afterbegin', text))
+    .catch(err => console.error('Error al cargar la ruta: ' + fileName + 'More Info => ' + err))
 }, 100);

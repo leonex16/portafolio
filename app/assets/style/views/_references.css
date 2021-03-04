@@ -4,6 +4,7 @@
 
 .card-container {
   text-align: center;
+  margin: 1rem auto;
 }
 
 .card-container__tutor {
@@ -13,10 +14,6 @@
   width: 150px;
   margin: auto;
 }
-
-/* .information-tutor {
-  
-} */
 
 .information-tutor__name {
   font-size: 1.1rem;
@@ -33,4 +30,28 @@
 .information-tutor__email {
   color: var(--light-mode);
   font-size: .9rem;
+}
+
+@media screen and (min-width: 992px){
+  .background-references{
+    background-color: var(--dark-mode-contrast);
+    padding: 1rem 0;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    margin: 1rem auto;
+  }
+
+  .card-container.m-card{
+    width: 80%;
+    min-width: 400px;
+  }
+
+  .information-tutor {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }

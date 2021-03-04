@@ -24,3 +24,26 @@
   margin: var(--margin-tb) auto;
   line-height: 30px;
 }
+
+@media screen and (min-width: 992px){
+  .aux-div{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    justify-content: center;
+    background-color: var(--dark-mode-contrast);
+
+  }
+
+  .background-about-me{
+    padding: 1rem 0;
+  }
+
+  .background-about-me{
+    max-width: 400px;
+    justify-self: end;
+  }
+
+  .background-references{
+    max-width: 620px;
+  }
+}

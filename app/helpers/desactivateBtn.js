@@ -1,9 +1,8 @@
 export default function desactivateBtn() {
   window.addEventListener('scroll', () => {
-    let $btnToDesactivate = document.querySelector('img.bottom-links-container__img--active');
+    let $btnToDesactivate = document.querySelectorAll('.a-opacity-active');
     if ($btnToDesactivate) {
-      setTimeout(() => $btnToDesactivate.classList.remove('bottom-links-container__img--active'), 2000);
-      
+      setTimeout(() => $btnToDesactivate.forEach(btn => btn.classList.remove('a-opacity-active')), 1000);
     }
   });
 };
