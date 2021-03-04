@@ -104,6 +104,14 @@
   opacity: 1;
 }
 
+@media screen and (min-width: 768px){
+  .more-info-me__summary{
+    display: block;
+    font-size: 1.2rem;
+    line-height: 40px;
+  }
+}
+
 @media screen and (min-width: 992px){
   .about-me__first-name{
     position: absolute;
