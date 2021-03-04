@@ -1,11 +1,11 @@
-@import 'app/assets/style/views/_topNavbar.css';
-@import 'app/assets/style/views/_introduction.css';
-@import 'app/assets/style/views/_aboutMe.css';
-@import 'app/assets/style/views/_references.css';
-@import 'app/assets/style/views/_tecnologies.css';
-@import 'app/assets/style/views/_projects.css';
-@import 'app/assets/style/views/_footer.css';
-@import 'app/assets/style/views/_bottomNavbar.css';
+@import './views/_topNavbar.css';
+@import './views/_introduction.css';
+@import './views/_aboutMe.css';
+@import './views/_references.css';
+@import './views/_tecnologies.css';
+@import './views/_projects.css';
+@import './views/_footer.css';
+@import './views/_bottomNavbar.css';
 
 /* h1 1.5
 h2 1.3
