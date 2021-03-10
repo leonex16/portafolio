@@ -270,6 +270,7 @@
   .card-container.m-card{
     width: 80%;
     min-width: 400px;
+    max-width: 480px;
   }
 
   .information-tutor {
@@ -285,9 +286,10 @@
 
 .about-me-container{
   margin: auto;
-  width: var(--min-width);
-  max-width: var(--max-width);
+  /* width: var(--min-width); */
+  /* max-width: var(--max-width); */
   /* border: 2px solid #fff; */
+  padding: 0 1rem;
 }
 
 .about-me-container__header{
@@ -307,24 +309,26 @@
 
 @media screen and (min-width: 992px){
   .aux-div{
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     justify-content: center;
     background-color: var(--dark-mode-contrast);
 
   }
-
-  .background-about-me{
-    padding: 1rem 0;
-  }
-
+  
   .background-about-me{
     max-width: 400px;
     justify-self: end;
+    padding: 1rem 0;
+  }
+
+  .about-me-container{
+    padding: 0;
   }
 
   .background-references{
-    max-width: 620px;
+    max-width: 800px;
   }
 }
 .background-introduction{
@@ -335,7 +339,7 @@
   margin: var(--margin-tb) auto;
   width: var(--min-width);
   max-width: var(--max-width);
-  height: calc(100vh - 75px);
+  min-height: 95vh;
 
   display: flex;
   flex-direction: column;
@@ -358,8 +362,8 @@
   height: 250px;
   width: 250px;
   border-radius: 50%;
-  object-fit: cover;
-  object-position: 0 5%;
+  /* object-fit: cover; */
+  /* object-position: 0 5%; */
   text-align: center;
 }
 
@@ -403,7 +407,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .more-info-me__position {
@@ -461,10 +465,11 @@
     position: absolute;
     left: 0;
     right: 30px;
-    bottom: 137px;
+    bottom: 200px;
     margin: auto;
-    height: 325px;
-    width: 265px;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
     border-radius: 0;
     transform: scale(1.9);
   }
@@ -485,7 +490,8 @@
     position: absolute;
     top: calc(18% - 66px);
     right: 0;
-    height: calc(100% - 1rem - 66px);
+    max-height: 810px;
+    height: 90%;
     width: 290px;
     align-items: center;
     text-align: left;
@@ -516,7 +522,7 @@
 }
 
 [id]{
-  scroll-margin-top: 5ex;
+  scroll-margin-top: 6ex;
 }
 
 @media screen and (min-width: 768px){
@@ -573,7 +579,7 @@ h3 1.1 */
   --dark-mode-contrast: hsl(0,0%,10%);
 
   --min-width: 90%;
-  --max-width: 1020px;
+  --max-width: 1280px;
 
   --margin-tb: .5rem;
 
