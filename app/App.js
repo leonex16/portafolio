@@ -62,14 +62,14 @@ let pathsSvgTecnologies = {
 };
 
 export function App(){
-  includeHtml({fileName: 'topNavbar.html', element: $root});
-  includeHtml({fileName: 'introduction.html', element: $root});
-  includeHtml({fileName: 'aboutMe.html', element: $root});
-  includeHtml({fileName: 'references.html', element: $root});
-  includeHtml({fileName: 'tecnologies.html', element: $root});
-  includeHtml({fileName: 'projects.html', element: $root});
-  includeHtml({fileName: 'footer.html', element: $root});
-  includeHtml({fileName: 'bottomNavbar.html', element: $root});
+  includeHtml({fileName: 'topNavbar.html', element: $root, secs: 0});
+  includeHtml({fileName: 'introduction.html', element: $root, secs: 0});
+  includeHtml({fileName: 'aboutMe.html', element: $root, secs: 100});
+  includeHtml({fileName: 'references.html', element: $root, secs: 200});
+  includeHtml({fileName: 'tecnologies.html', element: $root, secs: 300});
+  includeHtml({fileName: 'projects.html', element: $root, secs: 400});
+  includeHtml({fileName: 'footer.html', element: $root, secs: 500});
+  includeHtml({fileName: 'bottomNavbar.html', element: $root, secs: 600});
 
   setTimeout(() => {
     includeSvg(pathsSvgTecnologies);
